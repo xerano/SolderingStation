@@ -1,9 +1,3 @@
-/*
- * I2C.h
- *
- *  Created on: 07.03.2019
- *      Author: matthias
- */
 
 #ifndef I2C_H_
 #define I2C_H_

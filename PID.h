@@ -1,10 +1,3 @@
-/*
- * PID.h
- *
- *  Created on: 06.03.2019
- *      Author: matthias
- */
-
 #ifndef PID_H_
 #define PID_H_
 

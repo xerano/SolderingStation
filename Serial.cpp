@@ -1,9 +1,3 @@
-/*
- * Serial.cpp
- *
- *  Created on: 07.03.2019
- *      Author: matthias
- */
 
 #include "Serial.h"
 
@@ -21,7 +15,11 @@ void Serial::init(){
 #endif
 
 	UCSRB |= _BV(TXEN) | _BV(RXEN); // transmit and receive
+#if	defined (__AVR_ATmega8__)
 	UCSRC = _BV(URSEL) | _BV(UCSZ1) | _BV(UCSZ0); // 8 data bits, 1 stop bit
+#else
+	UCSRC = _BV(UCSZ1) | _BV(UCSZ0); // 8 data bits, 1 stop bit
+#endif
 }
 
 void Serial::transmitByte(unsigned char data){

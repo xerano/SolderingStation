@@ -1,10 +1,3 @@
-/*
- * I2C.cpp
- *
- *  Created on: 07.03.2019
- *      Author: matthias
- */
-
 #include "I2C.h"
 
 I2C::I2C() {
